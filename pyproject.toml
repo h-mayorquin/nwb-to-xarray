@@ -5,11 +5,14 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
+    "pynwb>=3.1.0",
+    "ragged",
     "xarray",
 ]
 
 [dependency-groups]
 dev = [
+    "dandi>=0.69.3",
     "ipykernel",
     "matplotlib>=3.10.3",
     "ndx-pose>=0.2.2",
@@ -32,3 +35,4 @@ neuroconv = { path = "../neuroconv", editable = true }
 xarray = { path = "../xarray", editable = true }
 spikeinterface = { path = "../spikeinterface" }
 roiextractors = { path = "../roiextractors" }
+ragged = { path = "../ragged", editable = true }
